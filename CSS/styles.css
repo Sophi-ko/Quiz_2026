@@ -108,12 +108,17 @@ button {
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1)
 }
 
-.action-btn:hover {
+.action-btn:not(:disabled):hover {
   box-shadow: 0 0 45px 0 rgba(200, 0, 255, 0.55) inset;
 }
 
-.action-btn:active {
+.action-btn:not(:disabled):active {
   box-shadow: 0 0 45px 0 rgba(117, 4, 148, 0.63) inset;
+}
+
+.action-btn:disabled {
+  cursor: default;
+  opacity: 0.55;
 }
 
 .action-btn--back {
@@ -273,13 +278,14 @@ button {
   text-align: center;
 }
 
-.answer-card:hover {
+.answer-card:not(:disabled):hover {
   box-shadow: 0 0 60px 0 rgba(246, 0, 255, 0.60) inset;
   outline: none;
 }
 
 .answer-card:disabled {
   cursor: default;
+  pointer-events: none;
 }
 
 .answer-card__mark {
@@ -420,4 +426,3 @@ button {
     font-size: 24px;
   }
 }
-

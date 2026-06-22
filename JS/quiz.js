@@ -117,6 +117,12 @@
     });
 
     let isAnswered = false;
+    let canReturn = false;
+
+    if (backButton) {
+      backButton.disabled = true;
+      backButton.setAttribute("aria-disabled", "true");
+    }
 
     answerButtons.forEach((button) => {
       button.addEventListener("click", () => {
@@ -138,12 +144,23 @@
           if (correctButton) {
             correctButton.dataset.state = "true";
           }
+
+          canReturn = true;
+
+          if (backButton) {
+            backButton.disabled = false;
+            backButton.removeAttribute("aria-disabled");
+          }
         }, REVEAL_DELAY_MS);
       });
     });
 
     if (backButton) {
       backButton.addEventListener("click", () => {
+        if (!canReturn) {
+          return;
+        }
+
         markCompleted(question.id);
         window.location.href = "all_questions.html";
       });
