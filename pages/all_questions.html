@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Все вопросы | ИНТ Квиз</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <script src="../JS/quiz-data.js" defer></script>
+    <script src="../JS/quiz.js" defer></script>
+  </head>
+  <body class="quiz-page quiz-page--questions" data-page="all-questions">
+    <main class="questions-screen" aria-labelledby="questions-title">
+      <h1 class="visually-hidden" id="questions-title">Все вопросы</h1>
+      <section class="questions-panel" aria-label="Список вопросов">
+        <div class="questions-grid" id="questionsGrid"></div>
+      </section>
+      <button class="action-btn action-btn--finish" type="button" data-action="finish">Завершить</button>
+    </main>
+  </body>
+</html>

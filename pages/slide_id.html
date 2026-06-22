@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ОМ Софт | Квиз</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <script src="../JS/quiz-data.js" defer></script>
+    <script src="../JS/quiz.js" defer></script>
+  </head>
+  <body class="quiz-page quiz-page--slide" data-page="slide">
+    <main class="slide-screen" aria-labelledby="questionText">
+      
+      <section class="slide-panel">
+        <div class="question-text">
+          <div class="slide-panel__number" id="questionNumber" aria-label="Номер вопроса"></div>
+          <div class="slide-panel__question" id="questionText"></div>
+        </div>
+        
+        <div class="answers-grid" id="answersGrid" aria-label="Варианты ответа">
+          <button class="answer-card" type="button" data-option="a" data-state="default">
+            <span class="answer-card__mark">A</span>
+            <span class="answer-card__text"></span>
+          </button>
+          <button class="answer-card" type="button" data-option="b" data-state="default">
+            <span class="answer-card__mark">B</span>
+            <span class="answer-card__text"></span>
+          </button>
+          <button class="answer-card" type="button" data-option="c" data-state="default">
+            <span class="answer-card__mark">C</span>
+            <span class="answer-card__text"></span>
+          </button>
+          <button class="answer-card" type="button" data-option="d" data-state="default">
+            <span class="answer-card__mark">D</span>
+            <span class="answer-card__text"></span>
+          </button>
+        </div>
+        <button class="action-btn action-btn--back" type="button" data-action="back" aria-label="К списку вопросов">
+          <img class="action-btn__icon" src="../svg/Narrow%20Left.svg" alt="">
+        </button>
+      </section>
+    </main>
+  </body>
+</html>
