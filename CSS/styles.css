@@ -327,7 +327,7 @@ button {
     margin-bottom: 50px
   }
 
-  .questions-screen {;
+  .questions-screen {
     justify-content: space-between;
     padding: 20px 0;
     margin: 0;
@@ -368,6 +368,8 @@ button {
     min-height: 40px;
     height: 40px;
     border-radius: 8px;
+    padding: 0;
+    margin: 40px 0 40px 20px;
   }
 
   .action-btn__icon {
