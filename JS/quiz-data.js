@@ -128,7 +128,7 @@ window.QUIZ_DATA = [
   {
     id: 22,
     question: "Когда появилась первая версия 3D-стикеров ОМ Софт для Телеграма?",
-    options: { a: "Сентябрь 2025", b: "Октабрь 2025", c: "Декабрь 2024", d: "Апрель 2025" },
+    options: { a: "Сентябрь 2025", b: "Октябрь 2025", c: "Декабрь 2024", d: "Апрель 2025" },
     answer: "a"
   },
   {
@@ -170,7 +170,7 @@ window.QUIZ_DATA = [
   {
     id: 29,
     question: "Какого бренда нет в семействе Brauberg?",
-    options: { a: "Brauberg Ultra", b: "Brauberg ART", c: "Brauberg Home", d: "Brauberg hobby" },
+    options: { a: "Brauberg Ultra", b: "Brauberg ART", c: "Brauberg Home", d: "Brauberg Hobby" },
     answer: "c"
   },
   {
